@@ -5,9 +5,10 @@
 
 </head>
 <body>
-	<h3>Initial setup: get Demandbase Tag with forms running on this page (Find the tag here: <a href="https://tag.demandbase.com/admin/accounts/zpLWcp3U"> https://tag.demandbase.com/admin/accounts/zpLWcp3U </a> ). Tag should use Email, IP, or user input under the "company" field to autocomplete the industry field.</h3>
+	<h3>Create an account for Google Analytics and add the GA script to this page</h3>
 
-	<h4>Don't edit the HTML form.</h4>
+	<h4>Create three new custom dimensions in GA and update the DB Tag config to include these attributes.</h4>
+	<h4>Use GA Debugger to ensure the Demandbase data is being pushed to GA.</h4>
 
 	<form>
 		<input id="email" name="Email" type="text" placeholder="Email"/>
@@ -15,7 +16,7 @@
 		<input id="industry" name="Industry" type="text" placeholder="Industry"/>
 	</form>
 
-	<h4>When the form is auto-completing and toggling the industry field correctly, continue to <a href="./placeholder.html">Step Two</a></h4>
+	<h4>After you confirm the data is being sent to GA, continue to <a href="./gtm.html">Step Five</a></h4>
 
 <!-- DB TAG GOES HERE -->
 <script>
@@ -28,4 +29,4 @@
 </body>
 </html>
 
-<!-- change placeholder for company, debug country autocomplete -->
+<!-- initial setup, change placeholder for company, debug country autocomplete -->
